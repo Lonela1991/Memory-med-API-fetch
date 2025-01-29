@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">Memory</a>
+      <a href="resultListMemory.html">Resultatlista</a>
+    </header>
+    <main class="pageContainerResultList">
+      <section id="resultListSection"
+      >
+        <table class="table">
+          <caption>
+            <h3>Resultatlista: Memory</h3>
+          </caption>
+          <thead text-align="left">
+            <tr>
+              <td class="tdHeader" scope="col">Datum</td>
+              <td class="tdHeader" scope="col">Spelare</td>
+              <td class="tdHeader" scope="col">Försök</td>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider"></tbody>
+        </table>
+      </section>
+      <section id="myMemoryBtnSection">
+      <input id="myMemoryBtn" type="button" onclick="location.href='index.html';" value="Spela Memory"></input>
+    </section>
+      <section id="myMemoryResultChart">
+        <canvas id="myChart"></canvas>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scriptResultListMemory.js"></script>
+  </body>
+</html>

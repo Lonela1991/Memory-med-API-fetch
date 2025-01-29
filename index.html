@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Memory</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">Memory</a>
+      <a href="resultListMemory.html">Resultatlista</a>
+    </header>
+    <main class="pageContainerMemory">
+      <h1>Dagens hjärngympa: Memory</h1>
+      <section id="gameSection"></section>
+      <p id="gameSectionP">
+        Försök: <span class="attemptsHolder"></span> 
+        Hittade: <span class="foundHolder"></span>
+      </p>
+      <p id="gameSectionPInputs">
+        <button id="btnStartNewGame" type="button">Starta nytt spel</button>
+        <input type="button" onclick="location.href='resultListMemory.html';" value="Öppna Resultatlista"></input>
+      </p>
+    </main>
+    <section id="form-popup">
+      <form action="action_page.php" id="form-container">
+        <h2>Bra jobbat! Du hittade alla 10 par!</h1>
+        <p>Vill du spara ditt resultat i resultatlistan?</p>
+        <input
+          id="addPlayerName"
+          type="text"
+          placeholder="Spelarnamn"
+        />
+        <button id="btnAddPlayerData" type="button">Lägg till</button>
+        <button id="btnCancelForm" type="button">Avbryt</button>
+      </form>
+    </section>
+    <script src="scriptMemory.js"></script>
+  </body>
+</html>
